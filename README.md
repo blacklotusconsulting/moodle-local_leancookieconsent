@@ -48,6 +48,20 @@ This plugin intentionally does very little inside Moodle:
 
 To disconnect, disable the plugin or clear the Site Key and save changes.
 
+## Creating the Moodle release ZIP
+
+Do not use GitHub's **Download ZIP** button for a Moodle release: GitHub names
+the archive root after the repository (for example,
+`local_leancookieconsent-main/`), which Moodle refuses. From a checked-out,
+committed release revision run:
+
+```bash
+./tools/package-moodle-plugin.sh
+```
+
+The command creates `dist/leancookieconsent.zip` and verifies that its sole
+root directory is `leancookieconsent/`, as required by Moodle's ZIP installer.
+
 ## Frontend behaviour
 
 When enabled and configured, the plugin adds two tags to the standard HTML head:
