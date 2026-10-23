@@ -1,6 +1,8 @@
 # Lean Cookie Consent for Moodle
 
 Lean Cookie Consent for Moodle is a minimal connector for the Lean Cookie Consent SaaS.
+
+**Official integration:** learn more about [Lean Cookie Consent](https://leancookieconsent.com/) and [create a Free account](https://app.leancookieconsent.com/register?plan=free) to configure your first Moodle site.
 It follows the same model as the WordPress 2.0.0 minimal connector:
 
 `Moodle -> Site Key -> bundled local runtime -> /v1/config -> /api/consent`
